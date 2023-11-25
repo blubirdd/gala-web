@@ -1,0 +1,128 @@
+.environment-cards  {
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.environment-cards .card-border:after,
+.environment-cards .card-border:before {
+  content: "";
+  left: -5px;
+  bottom: -5px;
+  right:-5px;
+  top: -5px;
+  position: absolute;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.environment-cards .card-border:before {
+  transform: scaleY(0);
+}
+
+.environment-cards .card-border:after {
+  transform: scaleX(0);
+}
+
+.environment-cards .card-border:before {
+  border-left: 3px solid #759554;
+  border-right: 3px solid #759554;
+}
+
+.environment-cards .card-border:after {
+  border-bottom: 3px solid #759554;
+  border-top: 3px solid #759554;
+}
+
+.environment-cards .card-border:hover:before {
+  transform: scaleY(1);
+}
+
+.environment-cards .card-border:hover:after {
+  transform: scaleX(1);
+}
+
+.environment-cards .content {
+  transition: transform var(--d) var(--e);
+}
+
+.environment-cards .content {
+  transform: translateY(calc(100% - 4.5rem));
+}
+
+
+.environment-cards .content:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  background-image: linear-gradient(
+    to bottom,
+    hsla(0, 0%, 0%, 0) 0%,
+    hsla(0, 0%, 0%, 0.009) 11.7%,
+    hsla(0, 0%, 0%, 0.034) 22.1%,
+    hsla(0, 0%, 0%, 0.072) 31.2%,
+    hsla(0, 0%, 0%, 0.123) 39.4%,
+    hsla(0, 0%, 0%, 0.182) 46.6%,
+    hsla(0, 0%, 0%, 0.249) 53.1%,
+    hsla(0, 0%, 0%, 0.320) 58.9%,
+    hsla(0, 0%, 0%, 0.394) 64.3%,
+    hsla(0, 0%, 0%, 0.468) 69.3%,
+    hsla(0, 0%, 0%, 0.540) 74.1%,
+    hsla(0, 0%, 0%, 0.607) 78.8%,
+    hsla(0, 0%, 0%, 0.668) 83.6%,
+    hsla(0, 0%, 0%, 0.721) 88.7%,
+    hsla(0, 0%, 0%, 0.762) 94.1%,
+    hsla(0, 0%, 0%, 0.790) 100%
+  );
+  transform: translateY(-50%);
+  transition: transform calc(var(--d) * 2) var(--e);
+  opacity: 0;
+}
+
+
+.environment-cards .card:hover .content {
+  transform: translateY(0);
+}
+
+.environment-cards .card:hover .content::after {
+  opacity: 1;
+}
+
+.environment-cards .content > *:not(.title) {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+}
+
+.environment-cards .card:hover .content {
+  transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: calc(var(--d) / 8);
+}
+
+.environment-cards .card:hover .content > *:not(.title) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: calc(var(--d) / 8);
+}
+
+.environment-cards .title{
+  width: 100%;
+  font-size: 1.6rem;
+  z-index: 2;
+  margin-bottom: 1rem;
+}
+
+.environment-cards .text {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  z-index: 2;
+}
+
+
+
