@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Animals.css';
 import AnimalCard from "../components/AnimalCard.jsx";
 const Animals = () => {
 	return (
