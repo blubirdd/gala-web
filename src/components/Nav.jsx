@@ -16,9 +16,9 @@ function Nav() {
     </div>
     <div id="navbar-with-collapse" className="hidden basis-full grow sm:block">
       <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-          <a class="text-lg font-bold text-white hover:text-teal-200" href="#" aria-current="page">About</a>
-          <a class="text-lg font-bold text-white  hover:text-teal-200" href="#" aria-current="page">Environment</a>
-          <a class="text-lg font-bold text-white hover:text-teal-200" href="#" aria-current="page">Animals</a>
+          <a className="text-lg font-bold text-white hover:text-teal-200" href="#" aria-current="page">About</a>
+          <a className="text-lg font-bold text-white  hover:text-teal-200" href="#" aria-current="page">Environment</a>
+          <a className="text-lg font-bold text-white hover:text-teal-200" href="#" aria-current="page">Animals</a>
       </div>
     </div>
   </nav>

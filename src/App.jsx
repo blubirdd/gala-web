@@ -1,8 +1,9 @@
 import React from 'react'
 import "./index.css"
 import '../node_modules/preline/dist/preline.js'
-
 import Nav from './components/Nav.jsx'
+
+
 import {Hero, About, Environment, Animals, Footer } from "./sections/index.js"
 
 const App = () => {

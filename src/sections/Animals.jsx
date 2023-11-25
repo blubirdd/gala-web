@@ -7,20 +7,20 @@ const Animals = () => {
 				<h1 className="text-center text-teal-700 text-5xl font-bold p-4">Discover different kinds of animals</h1>
 
 				<div className="classification text-center mx-auto">
-					<div class="inline-flex rounded-lg shadow-sm">
-						<button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-emerald-700 text-white hover:bg-emerald-800 shadow-sm">
+					<div className="inline-flex rounded-lg shadow-sm">
+						<button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-emerald-700 text-white hover:bg-emerald-800 shadow-sm">
 							All
 						</button>
-						<button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-emerald-700 text-white hover:bg-emerald-800 shadow-sm">
+						<button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-emerald-700 text-white hover:bg-emerald-800 shadow-sm">
 							Mammal
 						</button>
-						<button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-emerald-700 text-white hover:bg-emerald-800 shadow-sm">
+						<button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-emerald-700 text-white hover:bg-emerald-800 shadow-sm">
 							Bird
 						</button>
-						<button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-emerald-700 text-white hover:bg-emerald-800 shadow-sm">
+						<button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-emerald-700 text-white hover:bg-emerald-800 shadow-sm">
 							Reptile
 						</button>
-						<button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-emerald-700 text-white hover:bg-emerald-800 shadow-sm">
+						<button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-emerald-700 text-white hover:bg-emerald-800 shadow-sm">
 							Aquatic
 						</button>
 					</div>

@@ -1,3 +1,5 @@
+import React from 'react'
+
 const EnvironmentCard = ({ imgURL, name, description }) => {
     const cardStyle = {
       backgroundImage: `url(${imgURL})`,
