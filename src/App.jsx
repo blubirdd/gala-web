@@ -9,26 +9,31 @@ import {Hero, About, Environment, Animals, Footer } from "./sections/index.js"
 const App = () => {
   return (
     <>
-    <main className="content-center relative">
+    <main className="content-center relative ">
       <section>
         <Nav/>
       </section>
 
-      <section  className="relative">
+      <section  className="relative max-w-[1920px] mx-auto">
         <Hero/>
       </section>
 
-      <section className="about relative max-w-[100rem] mx-auto">
+      <section className="relative max-w-[1920px] mx-auto">
         <About/>
       </section>
 
-      <section className="relative max-w-[100rem] mx-auto">
+      <section className="relative max-w-[1920px] mx-auto">
         <Environment/>
       </section>
 
-      <section className="relative max-w-[100rem] mx-auto">
+      <section className="relative max-w-[1920px] mx-auto">
         <Animals />
       </section>
+
+      <section className="relative max-w-[1920px] mx-auto">
+        <Footer />
+      </section>
+
 
     </main>
     </>

@@ -10,14 +10,14 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
-.custom-gradient{
-    background: radial-gradient(circle at center, #aaf5a1, white);
+body {
+
 }
 
-
-.custom-shape-divider-bottom-1700898736 {
+/* about top */
+.custom-shape-divider-top-1700918840 {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -25,37 +25,57 @@ html {
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1700898736 svg {
+.custom-shape-divider-top-1700918840 svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
-    height: 52px;
-    transform: rotateY(180deg);
+    width: calc(300% + 1.3px);
+    height: 39px;
 }
 
-.custom-shape-divider-bottom-1700898736 .shape-fill {
-    fill: #047857;
+.custom-shape-divider-top-1700918840 .shape-fill {
+    fill: #10b981;
 }
 
 
-/* about */
-.custom-shape-divider-top-1700898646 {
+/* about bottom */
+.custom-shape-divider-bottom-1700920154 {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
 }
 
-.custom-shape-divider-top-1700898646 svg {
+.custom-shape-divider-bottom-1700920154 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 52px;
-    transform: rotateY(180deg);
+    height: 15px;
 }
 
-.custom-shape-divider-top-1700898646 .shape-fill {
-    fill: #047857;
+.custom-shape-divider-bottom-1700920154 .shape-fill {
+    fill: #059669;
+}
+
+/* environment */
+.custom-shape-divider-top-1700920118 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1700920118 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 22px;
+}
+
+.custom-shape-divider-top-1700920118 .shape-fill {
+    fill: #10B981;
 }

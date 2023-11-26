@@ -3,7 +3,7 @@
   --e: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.environment-cards .card-border:after,
+/* .environment-cards .card-border:after,
 .environment-cards .card-border:before {
   content: "";
   left: -5px;
@@ -13,17 +13,17 @@
   position: absolute;
   transition: transform 0.3s ease-in-out;
   border-radius: 10px;
-}
+} */
 
-.environment-cards .card-border:before {
+/* .environment-cards .card-border:before {
   transform: scaleY(0);
 }
 
 .environment-cards .card-border:after {
   transform: scaleX(0);
-}
+} */
 
-.environment-cards .card-border:before {
+/* .environment-cards .card-border:before {
   border-left: 3px solid #759554;
   border-right: 3px solid #759554;
 }
@@ -31,7 +31,7 @@
 .environment-cards .card-border:after {
   border-bottom: 3px solid #759554;
   border-top: 3px solid #759554;
-}
+} */
 
 .environment-cards .card-border:hover:before {
   transform: scaleY(1);
