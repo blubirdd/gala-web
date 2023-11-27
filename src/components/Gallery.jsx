@@ -24,10 +24,10 @@ const Gallery = () => {
 				className="mySwiper noSelect"
 			>
 				<SwiperSlide>
-					<img src="./cover1.png" alt="" className=""  />
+					<img src="./cover1.jpg" alt="" className=""  />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src="./cover2.png" alt="" />
+					<img src="./cover2.jpg" alt="" />
 				</SwiperSlide>
 				<SwiperSlide>
 					<img src="./g4.jpg" alt="" />

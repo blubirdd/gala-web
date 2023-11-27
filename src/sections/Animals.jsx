@@ -31,7 +31,7 @@ const Animals = () => {
 					<path d="M600,16.8c0-8.11-8.88-13.2-19.92-13.2H0V120H1200V3.6H619.92C608.88,3.6,600,8.66,600,16.8Z" className="shape-fill"></path>
 				</svg>
 			</div>
-			<div className="animals mx-auto bg-gray-100 pt-10 pb-10" >
+			<div className="animals mx-auto bg-gray-100 pt-10 pb-10 overflow-x-hidden" >
 
 				<h1 className="text-center text-teal-700 text-4xl md:text-5xl font-bold p-4" data-aos="fade-down">Discover different kinds of animals</h1>
 

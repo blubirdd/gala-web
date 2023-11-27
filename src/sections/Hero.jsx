@@ -4,7 +4,7 @@ import '../styles/Hero.css';
 const Hero = () => {
   return (
     <>
-      <div className="hero-background relative bg-[url('./cover2.png')] bg-no-repeat bg-cover bg-left">
+      <div className="hero-background relative bg-[url('/cover2.jpg')] bg-no-repeat bg-cover bg-left">
         <div className="inset-0 bg-slate-950 bg-opacity-60 h-[600px] md:h-[650px]">
           <div className="mx-auto px-4 sm:px-6 lg:px-8 sm:py-24">
             <div className="flex justify-center">
