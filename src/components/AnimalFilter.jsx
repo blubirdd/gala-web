@@ -11,18 +11,18 @@ const AnimalFilter = ({ selectedClassification, onClassificationChange }) => {
   };
 
   return (
-    <div className="classification text-center mx-auto">
+    <div className="classification text-center mx-auto" data-aos="fade-down" data-aos-delay="200"> 
       <div className="grid grid-cols-1 px-4 text-center md:inline-flex md:flex-row rounded-lg shadow-sm">
         {classifications.map(classification => (
           <button
             key={classification}
             type="button"
-            className={`py-3 px-2 md:px-12 inline-flex items-center gap-x-1 md:first:rounded-s-lg first:ms-0 md:last:rounded-e-lg text-sm font-medium focus:z-10 border
+            className={`py-3 px-2 md:px-12 items-center gap-x-1 rounded-lg md:rounded-none md:first:rounded-s-lg first:ms-0 md:last:rounded-e-lg text-lg md:text-sm font-medium focus:z-10 border
              ${selectedClassification === classification ?
-            'bg-emerald-600 text-white' : 'border-emerald-100 bg-emerald-700 text-white hover:bg-emerald-600 shadow-sm'}`}
+            'bg-emerald-500 text-white' : 'border-emerald-100 bg-emerald-700 text-white hover:bg-emerald-500 shadow-sm'}`}
             onClick={() => onClassificationChange(classification)}
           >
-            <i className={`text-slate-100 fa-solid ${iconMap[classification]}`}></i> {classification}
+            <i className={`text-orange-100 fa-solid pr-1 ${iconMap[classification]}`}></i> {classification}
           </button>
         ))}
       </div>

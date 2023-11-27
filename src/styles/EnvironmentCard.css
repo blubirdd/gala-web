@@ -1,37 +1,8 @@
 .environment-cards  {
-  --d: 700ms;
+  --d: 1000ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-/* .environment-cards .card-border:after,
-.environment-cards .card-border:before {
-  content: "";
-  left: -5px;
-  bottom: -5px;
-  right:-5px;
-  top: -5px;
-  position: absolute;
-  transition: transform 0.3s ease-in-out;
-  border-radius: 10px;
-} */
-
-/* .environment-cards .card-border:before {
-  transform: scaleY(0);
-}
-
-.environment-cards .card-border:after {
-  transform: scaleX(0);
-} */
-
-/* .environment-cards .card-border:before {
-  border-left: 3px solid #759554;
-  border-right: 3px solid #759554;
-}
-
-.environment-cards .card-border:after {
-  border-bottom: 3px solid #759554;
-  border-top: 3px solid #759554;
-} */
 
 .environment-cards .card-border:hover:before {
   transform: scaleY(1);
@@ -66,23 +37,35 @@
     hsla(0, 0%, 0%, 0.034) 22.1%,
     hsla(0, 0%, 0%, 0.072) 31.2%,
     hsla(0, 0%, 0%, 0.123) 39.4%,
-    hsla(0, 0%, 0%, 0.182) 46.6%,
-    hsla(0, 0%, 0%, 0.249) 53.1%,
-    hsla(0, 0%, 0%, 0.320) 58.9%,
-    hsla(0, 0%, 0%, 0.394) 64.3%,
-    hsla(0, 0%, 0%, 0.468) 69.3%,
-    hsla(0, 0%, 0%, 0.540) 74.1%,
+    hsla(0, 0%, 0%, 0.1582) 46.6%,
+    hsla(0, 0%, 0%, 0.300) 53.1%,
+    hsla(0, 0%, 0%, 0.420) 58.9%,
+    hsla(0, 0%, 0%, 0.494) 64.3%,
+    hsla(0, 0%, 0%, 0.568) 69.3%,
+    hsla(0, 0%, 0%, 0.640) 74.1%,
     hsla(0, 0%, 0%, 0.607) 78.8%,
     hsla(0, 0%, 0%, 0.668) 83.6%,
-    hsla(0, 0%, 0%, 0.721) 88.7%,
-    hsla(0, 0%, 0%, 0.762) 94.1%,
-    hsla(0, 0%, 0%, 0.790) 100%
+    hsla(0, 0%, 0%, 0.821) 88.7%,
+    hsla(0, 0%, 0%, 0.862) 94.1%,
+    hsla(0, 0%, 0%, 0.890) 100%
   );
   transform: translateY(-50%);
   transition: transform calc(var(--d) * 2) var(--e);
   opacity: 0;
 }
 
+.environment-cards .content > *:not(.title) {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+}
+
+/* hover states */
+
+.environment-cards .card:hover  {
+  transform: scale(1.03);
+  transition: 0.8s;
+}
 
 .environment-cards .card:hover .content {
   transform: translateY(0);
@@ -92,11 +75,7 @@
   opacity: 1;
 }
 
-.environment-cards .content > *:not(.title) {
-  opacity: 0;
-  transform: translateY(1rem);
-  transition: transform var(--d) var(--e), opacity var(--d) var(--e);
-}
+
 
 .environment-cards .card:hover .content {
   transform: translateY(0);
@@ -111,18 +90,7 @@
   transition-delay: calc(var(--d) / 8);
 }
 
-.environment-cards .title{
-  width: 100%;
-  font-size: 1.6rem;
-  z-index: 2;
-  margin-bottom: 1rem;
-}
 
-.environment-cards .text {
-  font-size: 1rem;
-  line-height: 1.8rem;
-  z-index: 2;
-}
 
 
 

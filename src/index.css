@@ -10,9 +10,26 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-
+body.active-modal {
+    overflow-y: hidden;
 }
+
+.hero-text{
+    font-family: 'Lilita One' !important;
+}
+
+h1, nav, .hero-text{
+    font-family: 'Signika Negative';
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+p{
+    font-family: 'Signika Negative';
+}
+
 
 /* about top */
 .custom-shape-divider-top-1700918840 {
@@ -78,4 +95,17 @@ body {
 
 .custom-shape-divider-top-1700920118 .shape-fill {
     fill: #10B981;
+}
+
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.noSelect:focus {
+    outline: none !important;
 }
