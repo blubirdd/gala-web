@@ -12,7 +12,7 @@ const AnimalFilter = ({ selectedClassification, onClassificationChange }) => {
 
   return (
     <div className="classification text-center mx-auto" data-aos="fade-down" data-aos-delay="200"> 
-      <div className="grid grid-cols-1 px-4 text-center md:inline-flex md:flex-row rounded-lg shadow-sm">
+      <div className="grid grid-cols-1 px-4 text-center md:inline-flex md:flex-row rounded-lg shadow-sm ">
         {classifications.map(classification => (
           <button
             key={classification}

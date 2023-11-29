@@ -14,7 +14,7 @@ const Environment = () => {
 
 			<div className="environment bg-gray-100 pb-10">
 				<div className="environment-cards p-4 pt-12">
-					<h1 className="text-center text-teal-700 text-4xl md:text-5xl font-bold pb-6" >Explore different environments</h1>
+					<h1 className="text-center text-teal-700 text-4xl md:text-5xl font-normal pb-6 drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.3)]" >Explore different environments</h1>
 					<div className="flex flex-wrap justify-center gap-x-2 gap-y-3 mx-auto">
 
 						<EnvironmentCard

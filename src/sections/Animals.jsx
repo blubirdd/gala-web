@@ -5,13 +5,13 @@ import AnimalCard from "../components/AnimalCard.jsx";
 import AnimalFilter from '../components/AnimalFilter.jsx';
 
 const Animals = () => {
-	const itemsPerPage = 3; 
+	const itemsPerPage = 3;
 	const [currentPage, setCurrentPage] = useState(1);
 	const [selectedClassification, setSelectedClassification] = useState('All');
 
 	const handleClassificationChange = (classification) => {
 		setSelectedClassification(classification);
-		setCurrentPage(1); 
+		setCurrentPage(1);
 	};
 
 	const filteredAnimals = selectedClassification === 'All'
@@ -33,7 +33,7 @@ const Animals = () => {
 			</div>
 			<div className="animals mx-auto bg-gray-100 pt-10 pb-10 overflow-x-hidden" >
 
-				<h1 className="text-center text-teal-700 text-4xl md:text-5xl font-bold p-4" data-aos="fade-down">Discover different kinds of animals</h1>
+				<h1 className="text-center text-teal-700 text-4xl md:text-5xl font-normal p-4 drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.3)]" data-aos="fade-down">Discover different kinds of animals</h1>
 
 				<AnimalFilter
 					selectedClassification={selectedClassification}
@@ -54,13 +54,16 @@ const Animals = () => {
 
 				<div className="flex justify-center items-center mt-4">
 					{Array.from({ length: Math.ceil(filteredAnimals.length / itemsPerPage) }).map((_, index) => (
-						<button
-							key={index}
-							onClick={() => paginate(index + 1)}
-							className={`px-4 py-2 mx-1 rounded-md ${currentPage === index + 1 ? 'bg-teal-500 text-white' : 'bg-gray-300 hover:bg-teal-500 text-white'}`}
-						>
-							{index + 1}
-						</button>
+						<a href="#animals">
+							<button
+								key={index}
+								onClick={() => paginate(index + 1)}
+								className={`px-4 py-2 mx-1 rounded-md ${currentPage === index + 1 ? 'bg-teal-500 text-white' : 'bg-gray-300 hover:bg-teal-500 text-white'}`}
+							>
+								{index + 1}
+							</button>
+						</a>
+
 					))}
 				</div>
 			</div>

@@ -6,7 +6,7 @@ const AnimalCard = ({ imgURL, name, scientificName, description }) => {
 		<div className="flex flex-col sm:flex-row bg-neutral-50 border shadow-lg rounded-xl mb-3" data-aos="flip-up" data-aos-offset="-200">
 			<img
 			  src={imgURL}
-				className="rounded-t-xl sm:rounded-t-none md:rounded-l-xl w-full sm:max-w-md md:max-w-md h-auto"
+				className="rounded-t-xl sm:rounded-t-none md:rounded-l-xl w-full sm:max-w-md md:max-w-sm h-auto"
 				alt="Image"
 			/>
 			<div className="p-4 md:p-5">
