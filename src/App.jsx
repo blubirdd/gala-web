@@ -33,32 +33,32 @@ const App = () => {
   return (
     <>
     <main className="content-center relative">
+
       <section>
         <Nav/>
       </section>
 
-      <section  className="relative max-w-[1920px] mx-auto" id="home">
+      <section  className="hero-section" id="home">
         <Hero/>
       </section>
 
-      <section className="about-section relative max-w-[1920px] mx-auto" id="about">
+      <section className="about-section" id="about">
         <About onOpenModal={openModal}/>
       </section>
 
-      <Modal isOpen={isModalOpen} onClose={closeModal} />
-
-      <section className="relative max-w-[1920px] mx-auto" id="environment">
+      <section className="environment-section" id="environment">
         <Environment/>
       </section>
 
-      <section className="animals-section relative max-w-[1920px] mx-auto" id="animals">
+      <section className="animals-section" id="animals">
         <Animals />
       </section>
 
-      <section className="relative max-w-[1920px] mx-auto" id="footer">
+      <section className="relative" id="footer">
         <Footer />
       </section>
-
+      
+      <Modal isOpen={isModalOpen} onClose={closeModal} />
 
     </main>
     </>
