@@ -42,7 +42,7 @@ const Hero = () => {
 							</p>
 						</div>
 						<div className="flex flex-col md:flex-row items-center justify-center " data-aos="fade-down" >
-							<a className="inline-flex justify-center items-center gap-x-3 mb-3 sm:mb-0 hover:scale-105 duration-100" target="_blank" href="https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf&hl=en&gl=US">
+							<a className="inline-flex justify-center items-center gap-x-3 mb-3 sm:mb-0 hover:scale-105 duration-100" href="/">
 								<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" className="w-48 h-20" alt="Google Play Badge" />
 							</a>
 							<button onClick={handlePlayVideo} className="hidden md:inline-flex justify-center items-center text-center bg-slate-950 hover:bg-slate-800 border border-slate-400 shadow-lg shadow-transparent text-white text-sm font-medium rounded-full focus:ring-offset-2 w-36 h-14 hover:scale-105 duration-100">
