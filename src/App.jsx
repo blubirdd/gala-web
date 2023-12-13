@@ -5,7 +5,7 @@ import Nav from './components/Nav.jsx'
 import Modal from './components/Modal.jsx'
 import AOS from "aos";
 import "aos/dist/aos.css";
-import {Hero, About, Environment, Animals, Footer } from "./sections/index.js"
+import { Hero, About, Environment, Animals, Footer } from "./sections/index.js"
 
 
 
@@ -32,35 +32,35 @@ const App = () => {
 
   return (
     <>
-    <main className="content-center relative">
+      <main className="content-center relative">
 
-      <section>
-        <Nav/>
-      </section>
+        <section>
+          <Nav />
+        </section>
 
-      <section  className="hero-section" id="home">
-        <Hero/>
-      </section>
+        <section className="hero-section" id="home">
+          <Hero />
+        </section>
 
-      <section className="about-section" id="about">
-        <About onOpenModal={openModal}/>
-      </section>
+        <section className="about-section" id="about">
+          <About onOpenModal={openModal} />
+        </section>
 
-      <section className="environment-section" id="environment">
-        <Environment/>
-      </section>
+        <section className="environment-section" id="environment">
+          <Environment />
+        </section>
 
-      <section className="animals-section" id="animals">
-        <Animals />
-      </section>
+        <section className="animals-section" id="animals">
+          <Animals />
+        </section>
 
-      <section className="relative" id="footer">
-        <Footer />
-      </section>
-      
-      <Modal isOpen={isModalOpen} onClose={closeModal} />
+        <section className="relative" id="footer">
+          <Footer />
+        </section>
 
-    </main>
+        <Modal isOpen={isModalOpen} onClose={closeModal} />
+
+      </main>
     </>
 
   )
