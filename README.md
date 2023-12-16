@@ -21,3 +21,6 @@ Contributions are welcomed to help improve the landing page!
 - Commit your changes
 - Push to the branch
 - Open a pull request
+
+## License
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
